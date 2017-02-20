@@ -8,12 +8,12 @@
         if (typeof Quill != 'undefined'){
 
           function copyToInput() {
-            document.getElementById('<%= @input_id %>').value = fullEditor.getHTML()
+            document.getElementById('<%= @input_id %>').value = fullEditor.root.innerHTML;
           }
 
           var fullEditor = new Quill('#full-editor-<%= @input_id %>', {
             modules: {
-              'toolbar': <%= @toolbar %>,
+              'toolbar': <%= @toolbar.to_json %>,
             },
             theme: 'snow'
           });

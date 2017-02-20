@@ -14,10 +14,8 @@ module Quill
           name: 'quill-value',
           id: 'quill-value',
           toolbar: [
-            [{ header: [false] }],
             ['bold', 'italic', 'underline'],
             [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-            ['image', 'code-block'],
             ['clean']
           ]
         }.merge options
