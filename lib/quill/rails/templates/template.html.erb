@@ -13,8 +13,7 @@
 
           var fullEditor = new Quill('#full-editor-<%= @input_id %>', {
             modules: {
-              'toolbar': null,
-              'link-tooltip': true
+              'toolbar': <%= @toolbar %>,
             },
             theme: 'snow'
           });
