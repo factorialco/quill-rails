@@ -27,6 +27,7 @@ module Quill
         @placeholder = mod_options[:placeholder]
         @formats     = [
           'blockquote',
+          'list',
           'italic',
           'underline',
           'bold',
