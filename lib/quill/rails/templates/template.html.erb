@@ -12,11 +12,12 @@
           }
 
           var fullEditor = new Quill('#full-editor-<%= @input_id %>', {
+            theme: 'snow',
             modules: {
               'toolbar': <%= @toolbar.to_json %>,
             },
             placeholder: <%= @placeholder.to_json %>,
-            theme: 'snow'
+            formats: <%= @formats %>
           });
 
           fullEditor.on('text-change', function(delta, source) {

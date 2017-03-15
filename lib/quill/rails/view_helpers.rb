@@ -20,11 +20,18 @@ module Quill
           ],
           placeholder: ''
         }.merge options
-        @input_name = (name || mod_options[:name])
-        @input_id   = quill_sanitize_id(name || mod_options[:id])
-        @toolbar    = mod_options[:toolbar]
-        @value      = mod_options[:value].present? ? mod_options[:value] : ""
+        @input_name  = (name || mod_options[:name])
+        @input_id    = quill_sanitize_id(name || mod_options[:id])
+        @toolbar     = mod_options[:toolbar]
+        @value       = mod_options[:value].present? ? mod_options[:value] : ""
         @placeholder = mod_options[:placeholder]
+        @formats     = [
+          'blockquote',
+          'italic',
+          'underline',
+          'bold',
+          'link'
+        ]
         ERB.new(File.read(File.join(source_root, 'template.html.erb'))).result(binding).html_safe
       end
 
