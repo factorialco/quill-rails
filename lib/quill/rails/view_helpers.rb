@@ -14,7 +14,7 @@ module Quill
           name: 'quill-value',
           id: 'quill-value',
           toolbar: [
-            ['bold', 'italic', 'underline'],
+            ['bold', 'italic', 'underline', 'link'],
             [{ 'list': 'ordered'}, { 'list': 'bullet' }],
             ['clean']
           ],
