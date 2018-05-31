@@ -13,8 +13,8 @@ Gem::Specification.new do |s|
   s.files       = Dir["{app,lib}/**/*"] + ["LICENSE", "Gemfile", "README.md"]
   s.version     = Quill::Rails::VERSION
 
-  s.add_dependency "railties", ">= 3.1.0", "< 5.0"
-  s.add_development_dependency "rails", ">= 3.1"
+  s.add_dependency "railties", ">= 5.0"
+  s.add_development_dependency "rails", ">= 5.0"
   s.add_development_dependency "jquery-rails"
   s.add_development_dependency 'coffee-rails'
   s.add_development_dependency "sqlite3"
